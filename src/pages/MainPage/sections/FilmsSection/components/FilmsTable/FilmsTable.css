@@ -1,0 +1,11 @@
+.films-table {
+    width: 80%;
+}
+.films-table tr th, .films-table tr td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+.films-table th {
+    background-color: #e0e0e0;
+}
