@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const VehicleItem = () => {
+
+    const { id } = useParams()
+
     const [vehicles, setVehicles] = useState([])
 
     useEffect(() => {
@@ -14,11 +17,15 @@ const VehicleItem = () => {
             .catch(error => console.error('Error:', error))
     }, [])
 
+    const filteredVehicles = vehicles.filter((vehicle) =>
+        vehicle.films.some((filmUrl) => filmUrl.includes(id))
+    )
+
     return (
         <>
-        {vehicles.map(vehicle => (
+        {filteredVehicles.map(vehicle => (
             <tr key={vehicle.id}>
-                <td><Link to={`/vehicles/${vehicle.id}`}>{vehicle.name}</Link></td>
+                <td>{vehicle.name}</td>
                 <td>{vehicle.description}</td>
                 <td>{vehicle.vehicle_class}</td>
             </tr>

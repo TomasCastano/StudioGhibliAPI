@@ -24,7 +24,7 @@ const LocationItem = () => {
         <>
         {filteredLocations.map(location => (
             <tr key={location.id}>
-                <td><Link to={`/location/${location.id}`}>{location.name}</Link></td>
+                <td>{location.name}</td>
                 <td>{location.climate}</td>
                 <td>{location.terrain}</td>
             </tr>

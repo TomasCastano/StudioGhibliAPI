@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const SpecieItem = () => {
+
+    const { id } = useParams()
+
     const [species, setSpecies] = useState([])
 
     useEffect(() => {
@@ -14,11 +17,15 @@ const SpecieItem = () => {
             .catch(error => console.error('Error:', error))
     }, [])
 
+    const filteredSpecies = species.filter((specie) =>
+        specie.films.some((filmUrl) => filmUrl.includes(id))
+    )
+
     return (
         <>
-        {species.map(specie => (
+        {filteredSpecies.map(specie => (
             <tr key={specie.id}>
-                <td><Link to={`/species/${specie.id}`}>{specie.name}</Link></td>
+                <td>{specie.name}</td>
                 <td>{specie.classification}</td>
             </tr>
         
