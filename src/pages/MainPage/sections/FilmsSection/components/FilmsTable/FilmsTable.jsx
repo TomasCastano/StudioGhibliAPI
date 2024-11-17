@@ -1,4 +1,5 @@
 import FilmItem from '../FilmItem/FilmItem'
+
 import './FilmsTable.css'
 
 const FilmsTable = () => {
@@ -9,6 +10,7 @@ const FilmsTable = () => {
                     <th>Título</th>
                     <th>Descripción</th>
                     <th>Fecha de Estreno</th>
+                    <th>Portada</th>
                 </tr>
             </thead>
             <tbody>

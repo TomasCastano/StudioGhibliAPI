@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-import './FilmDetailsSection.css'
 import OptionCard from './components/OptionCard/OptionCard'
+
+import './FilmDetailsSection.css'
 
 const FilmDetailsSection = () => {
 
@@ -23,6 +24,7 @@ const FilmDetailsSection = () => {
     return (
         <div className='film-details-section'>
             <div className="film-details">
+                <img className='film-image' src={film.image} alt={film.title} width={'200px'} />
                 <h1 className='film-title'>{film.title}</h1>
                 <h4 className='film-release-date'>{film.release_date}</h4>
                 <div className='film-description'>

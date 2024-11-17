@@ -1,13 +1,9 @@
-import { useParams } from 'react-router-dom'
-
 import DetailSection from '../../../../components/DetailSection/DetailSection'
 import PeopleItem from './PeopleItem/PeopleItem'
 
 import React from 'react'
 
 const PeopleSection = () => {
-
-    const { id } = useParams()
 
     return (
         <DetailSection section='people-section' name='Personas'>

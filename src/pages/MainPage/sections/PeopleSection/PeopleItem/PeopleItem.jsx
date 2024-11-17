@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 const PeopleItem = () => {
 
@@ -29,7 +29,6 @@ const PeopleItem = () => {
                 <td>{person.gender}</td>
                 <td>{person.age}</td>
             </tr>
-        
         ))}
         </>
     )

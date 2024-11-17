@@ -5,7 +5,7 @@ import './FilmsSection.css'
 const FilmsSection = () => {
     return (
         <section className='films-section'>
-            <h1>Título</h1>
+            <h1>Películas</h1>
             <FilmsTable />
         </section>
     )

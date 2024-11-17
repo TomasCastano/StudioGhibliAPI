@@ -13,6 +13,9 @@
     padding: 50px 100px;
     width: 100%;
 }
+.film-details-section .film-details .film-image {
+    margin-bottom: 30px;    
+}
 .film-details-section .film-details .film-release-date {
     color: #555;
 }

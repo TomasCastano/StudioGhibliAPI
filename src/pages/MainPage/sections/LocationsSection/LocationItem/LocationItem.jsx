@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 const LocationItem = () => {
 
@@ -28,7 +28,6 @@ const LocationItem = () => {
                 <td>{location.climate}</td>
                 <td>{location.terrain}</td>
             </tr>
-        
         ))}
         </>
     )

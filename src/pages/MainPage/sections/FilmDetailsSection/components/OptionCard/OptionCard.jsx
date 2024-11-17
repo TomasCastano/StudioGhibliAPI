@@ -1,4 +1,5 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom'
+
 import './OptionCard.css'
 
 const OptionCard = ({ title }) => {

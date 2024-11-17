@@ -21,6 +21,7 @@ const FilmItem = () => {
                 <td><Link to={`/film/${film.id}`}>{film.title}</Link></td>
                 <td>{film.description}</td>
                 <td>{film.release_date}</td>
+                <td><img src={film.image} alt={film.title} width={'100px'}/></td>
             </tr>
         
         ))}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const SpecieItem = () => {
 
@@ -28,7 +28,6 @@ const SpecieItem = () => {
                 <td>{specie.name}</td>
                 <td>{specie.classification}</td>
             </tr>
-        
         ))}
         </>
     )
